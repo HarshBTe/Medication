@@ -1,0 +1,53 @@
+.med-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+}
+
+.med-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.med-name {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.med-subtext {
+  font-size: 0.875rem;
+  color: #6b7280; /* gray-600 */
+}
+
+.med-button {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.med-button.not-taken {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+.med-button.not-taken:hover {
+  background-color: #d1d5db;
+}
+
+.med-button.taken {
+  background-color: #22c55e; /* green-500 */
+  color: white;
+}
+
+.med-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
